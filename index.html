@@ -14,6 +14,7 @@
 </head>
 <body>
   <header class="header">
+   
     <div class="logo">Maxwell Tinotenda Chikoti's Portfolio</div>
     <nav class="navbar">
         <ul>
@@ -36,12 +37,23 @@
 
 <!-- hero section starts -->
 <section class="home" id="home">
+  
+<label class="theme-switch">
+  <input type="checkbox" id="themeToggle">
+  <span class="slider"></span>
+</label>
   <div id="particles-js"></div>
 
   <div class="content">
-    <div class="profile-image">
-      <img src="max.jpg" alt="Maxwell Chikoti">
-    </div>
+    
+<div class="profile-wrapper">
+  <div class="pulse-border"></div>
+  <div class="profile-image">
+    <img src="max.jpg" alt="Profile Picture" />
+  </div>
+  <canvas id="pulse-canvas" width="400" height="400"></canvas>
+</div>
+
     <h2>Hi There,<br/> I'm Maxwell <span>Chikoti</span></h2>
     <p>A third year Business Information Technology Student at the University of Johannesburg ! <span class="typing-text"></span></p>
     <a href="#about" class="btn">
@@ -55,6 +67,7 @@
 
 
 <!-- about section starts -->
+ 
 <section class="about" id="about">
 <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
 
@@ -65,11 +78,12 @@
     <h3>I'm Maxwell !</h3>
     <span class="tag">3rd year Information Technology Student </span>
     
-    <p>Hello! I'm Maxwell Tinotenda Chikoti, a 20-year-old Business Information Technology student based in Johannesburg, South Africa, originally from Zimbabwe. 
-      Passionate about technology and innovation, I explore the intersection of business strategy and IT solutions. 
-      <br><br>
-      Outside academics, I enjoy discovering cafes, photography, and staying active. Dedicated to continuous learning, I aim to make a positive impact in the ever-evolving digital world.</p>
-  </div>
+    <p>
+  Hello! I'm Maxwell Tinotenda Chikoti, a <span id="age"></span>-year-old Business Information Technology student based in Johannesburg, South Africa, originally from Zimbabwe. 
+  Passionate about technology and innovation, I explore the intersection of business strategy and IT solutions. 
+  <br><br>
+  Outside academics, I enjoy discovering cafes, photography, and staying active. Dedicated to continuous learning, I aim to make a positive impact in the ever-evolving digital world.
+</p>
     <div class="box-container">
         <!-- <div class="box">
           <p><span> age: </span> 20</p>
@@ -100,49 +114,22 @@
 
   <div class="container">
     <div class="row" id="skillsContainer">
-      <div class="skills-grid">
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/adobe-xd.png" alt="Adobe XD"/>AdobeXD
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/visual-studio-code-2019.png" alt="VS Code"/>VS Code
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/figma.png" alt="Figma"/>Figma
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/python.png" alt="Python"/>Python
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/ms-excel.png" alt="Excel"/>Excel
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/ms-word.png" alt="Word"/>Word
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/c-sharp-logo.png" alt="C#"/>C#
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/css.png" alt="CSS"/>CSS
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/javascript.png" alt="JavaScript"/>JavaScript
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/sql.png" alt="SQL"/>SQL
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/?size=50&id=wPohyHO_qO1a&format=png" alt="React Native"/>React Native
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/?size=50&id=87330&format=png" alt="Google Firebase"/>Google Firebase
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/html-5.png" alt="HTML"/>HTML
-        </div>
-        <div class="skill-item">
-          <img src="https://img.icons8.com/color/24/000000/c-plus-plus-logo.png" alt="C++"/>C++
-        </div>
+     <div class="skills-grid">
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/adobe-xd.png" alt="Adobe XD"/>AdobeXD</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/visual-studio-code-2019.png" alt="VS Code"/>VS Code</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/figma.png" alt="Figma"/>Figma</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/python.png" alt="Python"/>Python</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/ms-excel.png" alt="Excel"/>Excel</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/ms-word.png" alt="Word"/>Word</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/c-sharp-logo.png" alt="C#"/>C#</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/css.png" alt="CSS"/>CSS</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/javascript.png" alt="JavaScript"/>JavaScript</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/sql.png" alt="SQL"/>SQL</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/?size=50&id=wPohyHO_qO1a&format=png" alt="React Native"/>React Native</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/?size=50&id=87330&format=png" alt="Google Firebase"/>Google Firebase</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/html-5.png" alt="HTML"/>HTML</div></div>
+  <div class="skill-item"><div class="content"><img src="https://img.icons8.com/color/24/000000/c-plus-plus-logo.png" alt="C++"/>C++</div></div>
+</div>
       </div>
     </div>
   </div> 
